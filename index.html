@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFL Team Selector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="decor-bg">
+    <!-- Football field SVG overlay -->
+    <svg class="football-field" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="50" y="100" width="1100" height="400" rx="60" fill="#fff0f6" fill-opacity="0.5" stroke="#d72660" stroke-width="8"/>
+      <line x1="150" y1="100" x2="150" y2="500" stroke="#d72660" stroke-width="4"/>
+      <line x1="1050" y1="100" x2="1050" y2="500" stroke="#d72660" stroke-width="4"/>
+      <line x1="600" y1="100" x2="600" y2="500" stroke="#d72660" stroke-width="4"/>
+      <text x="600" y="320" text-anchor="middle" fill="#d72660" font-size="80" font-family="cursive" font-weight="bold">NFL</text>
+      <!-- End zones -->
+      <rect x="50" y="100" width="100" height="400" rx="40" fill="#ffb6c1" fill-opacity="0.7"/>
+      <rect x="1050" y="100" width="100" height="400" rx="40" fill="#ffb6c1" fill-opacity="0.7"/>
+    </svg>
+    <!-- Cute footballs and hearts -->
+    <div class="cute-icons">
+      <svg class="football-icon" viewBox="0 0 48 24"><ellipse cx="24" cy="12" rx="20" ry="10" fill="#d72660" stroke="#fff0f6" stroke-width="3"/><rect x="20" y="10" width="8" height="4" rx="2" fill="#fff"/><line x1="24" y1="10" x2="24" y2="14" stroke="#d72660" stroke-width="2"/></svg>
+      <svg class="football-icon" style="left:80vw;top:10vh;" viewBox="0 0 48 24"><ellipse cx="24" cy="12" rx="20" ry="10" fill="#d72660" stroke="#fff0f6" stroke-width="3"/><rect x="20" y="10" width="8" height="4" rx="2" fill="#fff"/><line x1="24" y1="10" x2="24" y2="14" stroke="#d72660" stroke-width="2"/></svg>
+      <svg class="heart-icon" viewBox="0 0 32 32"><path d="M16 29s-13-8.35-13-16A7 7 0 0 1 16 7a7 7 0 0 1 13 6c0 7.65-13 16-13 16z" fill="#ff69b4" stroke="#fff0f6" stroke-width="2"/></svg>
+      <svg class="heart-icon" style="left:10vw;top:80vh;" viewBox="0 0 32 32"><path d="M16 29s-13-8.35-13-16A7 7 0 0 1 16 7a7 7 0 0 1 13 6c0 7.65-13 16-13 16z" fill="#ff69b4" stroke="#fff0f6" stroke-width="2"/></svg>
+      <svg class="sparkle-icon" viewBox="0 0 24 24"><polygon points="12,2 15,10 23,12 15,14 12,22 9,14 1,12 9,10" fill="#fff0f6"/></svg>
+      <svg class="sparkle-icon" style="left:90vw;top:90vh;" viewBox="0 0 24 24"><polygon points="12,2 15,10 23,12 15,14 12,22 9,14 1,12 9,10" fill="#fff0f6"/></svg>
+    </div>
+  </div>
+  <div class="dropdown-container">
+    <select id="team-select">
+      <option value="" disabled selected>Select a team</option>
+    </select>
+  </div>
+  <div id="team-info" class="team-info"></div>
+  <div id="bottom-logos" class="bottom-logos"></div>
+  <button id="back-btn" class="back-btn" style="display:none;">Back</button>
+  <script src="app.js"></script>
+</body>
+</html>

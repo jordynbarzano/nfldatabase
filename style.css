@@ -1,0 +1,200 @@
+/* Decorative background and cute icons */
+.decor-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.football-field {
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60vw;
+  height: 32vh;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.cute-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.football-icon {
+  position: absolute;
+  left: 10vw;
+  top: 10vh;
+  width: 28px;
+  height: 14px;
+  opacity: 0.85;
+}
+.heart-icon {
+  position: absolute;
+  left: 80vw;
+  top: 80vh;
+  width: 18px;
+  height: 18px;
+  opacity: 0.8;
+}
+.sparkle-icon {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  width: 14px;
+  height: 14px;
+  opacity: 0.7;
+}
+.bottom-logos {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 0 24px 0;
+  background: rgba(255,240,246,0.85);
+  z-index: 3;
+  overflow-x: auto;
+}
+
+.bottom-logo-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fff0f6;
+  box-shadow: 0 2px 8px rgba(215,38,96,0.10);
+  object-fit: contain;
+}
+
+.back-btn {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 10;
+  padding: 12px 32px;
+  border-radius: 24px;
+  border: none;
+  background: #d72660;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(215,38,96,0.15);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.back-btn:hover {
+  background: #ff69b4;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #ffb6c1 0%, #ff69b4 100%);
+  transition: background 0.5s;
+  overflow-x: hidden;
+}
+
+.dropdown-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 2;
+}
+
+#team-select {
+  padding: 12px 24px;
+  border-radius: 24px;
+  border: none;
+  font-size: 1.2rem;
+  background: #fff0f6;
+  color: #d72660;
+  box-shadow: 0 2px 8px rgba(215,38,96,0.15);
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.team-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: #fff;
+  font-size: 2rem;
+  transition: background 0.5s;
+  overflow-y: auto;
+}
+
+
+.team-logo {
+  width: 240px;
+  height: 240px;
+  margin-bottom: 32px;
+  border-radius: 50%;
+  background: #fff0f6;
+  box-shadow: 0 4px 24px rgba(215,38,96,0.15);
+  object-fit: contain;
+}
+
+
+.team-name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(215,38,96,0.25);
+}
+
+
+.team-division {
+  font-size: 2rem;
+  margin-bottom: 32px;
+  font-style: italic;
+  color: #fff0f6;
+  text-shadow: 0 2px 8px rgba(215,38,96,0.15);
+}
+
+.all-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 32px 16px;
+  padding: 48px 32px 32px 32px;
+  width: 100vw;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,240,246,0.7);
+  border-radius: 24px;
+  box-shadow: 0 2px 8px rgba(215,38,96,0.10);
+  padding: 16px 8px;
+}
